@@ -1,20 +1,16 @@
 
-## Welcome to my portfolio!
+# Welcome to my portfolio!
 
 You can use the [editor on GitHub](https://github.com/mildredsuriel/mildredsuriel.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
-
 
 ## Check out my 2048 project
 <iframe src="https://cdnapisec.kaltura.com/p/1301391/sp/130139100/embedIframeJs/uiconf_id/28278202/partner_id/1301391"></iframe>
 
-### Markdown
+## Check out my Twilio text generator app
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
+This is a markdown
+```
 
 - Bulleted
 - List
@@ -25,4 +21,3 @@ Syntax highlighted code block
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
-```
