@@ -11,7 +11,7 @@ You can use the [editor on GitHub](https://github.com/mildredsuriel/mildredsurie
 <iframe src="https://cdnapisec.kaltura.com/p/1301391/sp/130139100/embedIframeJs/uiconf_id/28278202/partner_id/1301391?"></iframe>
 
 ## 2048 Google Drive
-<iframe src="https://drive.google.com/file/d/1v1KQK85GY6Nf53KoEExgaR8dV_0x7Csj/preview" width="640" height="480"></iframe>
+<iframe src="https://drive.google.com/file/d/1v1KQK85GY6Nf53KoEExgaR8dV_0x7Csj/preview" width="1280" height="720"></iframe>
 
 
 ## 2048 Google Drive w/ include call
