@@ -1,7 +1,6 @@
 ---
-driveId: 1v1KQK85GY6Nf53KoEExgaR8dV_0x7Csj/preview
+2048Id: 1v1KQK85GY6Nf53KoEExgaR8dV_0x7Csj/preview
 ---
-
 
 # Welcome to my portfolio!
 
@@ -13,14 +12,8 @@ Aside from basic Linux scripting and OS configurations, I am also experienced in
 
 You can use the [editor on GitHub](https://github.com/mildredsuriel/mildredsuriel.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
-## Check out my 2048 project
-<iframe src="https://cdnapisec.kaltura.com/p/1301391/sp/130139100/embedIframeJs/uiconf_id/28278202/partner_id/1301391?"></iframe>
-
-## 2048 Google Drive
-<iframe src="https://drive.google.com/file/d/1v1KQK85GY6Nf53KoEExgaR8dV_0x7Csj/preview" width="1280" height="720"></iframe>
-
 ## 2048 Google Drive w/ include call
-{% include googleDrivePlayer.html id=page.driveId %}
+{% include googleDrivePlayer.html id=page.2048Id %}
 
 ## Check out my Twilio text generator app
 
