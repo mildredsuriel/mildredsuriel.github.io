@@ -1,7 +1,8 @@
 # SED
 
 1. Change the name Jon to Jonathan.
-```
+
+```console
 twagenhals@DESKTOP-HCA7PTF:/mnt/c/Users/Public/Desktop$ sed 's/Jon/Jonathan/' datebook
 Steve Blenheim:238-923-7366:95 Latham Lane, Easton, PA 83755:11/12/56:20300
 Betty Boop:245-836-8357:635 Cutesy Lane, Hollywood, CA 91464:6/23/23:14500
@@ -33,7 +34,8 @@ Vinh Tranh:438-910-7449:8235 Maple Street, Wilmington, VM 29085:9/23/63:68900
 ```
 
 2. Delete the first four lines.
-```
+
+```console
 twagenhals@DESKTOP-HCA7PTF:/mnt/c/Users/Public/Desktop$ sed '1,4d' datebook
 Jennifer Cowan:548-834-2348:583 Laurel Ave., Kingsville, TX 83745:10/1/35:58900
 Jon DeLoach:408-253-3122:123 Park St., San Jose, CA 04086:7/25/53:85100
