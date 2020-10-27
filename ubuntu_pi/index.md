@@ -1,7 +1,7 @@
 # UBUNTU
 
 <img src="images/pi.png" alt="hi" class="inline"/>
-![Alt text](../images/pi.jpg?raw=true "Title")
+![Alt text](../images/pi.png?raw=true "Title")
 
 This setup is broken down into several steps, which if followed in order will allow you to have a fully configured and functional CentOS server.
 
