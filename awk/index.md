@@ -2,8 +2,9 @@
 
 Lab3
 1. Print all the phone numbers.
-	awk -F ':' '{print $2}' lab3.data
-
+```
+awk -F ':' '{print $2}' lab3.data
+```
 2. Print Dan's phone number.	
 	awk -F ':' '/Dan/ {print $2}' lab3.data
 
