@@ -7,8 +7,3 @@ This portfolio is meant to display my background in information technology and c
 Aside from basic Linux scripting and OS configurations, I am also experienced in Processing (which is a language similar to C), where I have re-designed the popular [2048](mildredsuriel.github.io/2048) game. I also have experience with Python, where I have made an [automated texting app using Twilio](mildredsuriel.github.io/twilio), and developed [regex expressions for number and email verification](mildredsuriel.github.io/regex).
 
 Please check back frequently for any updates to my [weekly accomplishments](mildredsuriel.github.io/weekly_accomplishments), or checkout my [LinkedIn](https://www.linkedin.com/in/mildred-suriel-957b7688/) or [Github source](github.com/mildredsuriel) for more updates. Thanks!
-
-
-<span style="color:blue">
-some *This is Blue italic.* text
-</span>
