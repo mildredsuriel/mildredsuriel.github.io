@@ -44,6 +44,19 @@ Lab3
 
 	```
 	awk -F ':' -f facts.awk lab4.data
+
+	BEGIN {}
+	{
+		if ($1 ~ "Savage")
+			print "Savage found - " $1 $2
+		
+		if ($1 ~ "Chet")
+			print "Chet's total contribution: $" $3 + $4 + $5
+			
+		if ($3 == 50)
+			print $1 " Contributed $50 the first month"
+	}
+	END {}
 	```	
 
 Lab4
