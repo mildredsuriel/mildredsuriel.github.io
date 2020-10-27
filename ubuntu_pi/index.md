@@ -1,5 +1,7 @@
 # UBUNTU
 
+<img src="images/pi.png" alt="hi" class="inline"/>
+
 This setup is broken down into several steps, which if followed in order will allow you to have a fully configured and functional CentOS server.
 
 1. [Installation](installation)
