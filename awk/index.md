@@ -42,11 +42,9 @@ Lab3
 - Prints Chet 's contributions.
 - Prints all those who contributed $50 the first month.
 
-```
+	```
 	awk -F ':' -f facts.awk lab4.data
-```	
-
-
+	```	
 
 Lab4
 1. Print the first and last names of those who contributed more than $110 in the second month.
@@ -89,18 +87,6 @@ Lab4
 ```
 	awk -F ':' '{variable=$1; if ($1 == "Nancy McNeil") variable="Doris Shutt"; $1=variable; print $0}' lab4.data
 ```
-
-
-
-
-
-
-
-
-
-
-
-Lab4
 
 
 
