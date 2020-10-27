@@ -41,6 +41,7 @@ Lab3
 - Prints full names and phone numbers for the Savages .
 - Prints Chet 's contributions.
 - Prints all those who contributed $50 the first month.
+
 ```
 	awk -F ':' -f facts.awk lab4.data
 ```	
