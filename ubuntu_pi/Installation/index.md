@@ -10,38 +10,56 @@ Deliverables:
 1. A short document showing how you did installs.  Target market is someone trying to follow along with you to make their own machines, assume some technical knowledge but not expertise.  Screenshots are helpful to go with your descriptions.
 2. A short document saying what you have included in your installs, including any software you've added and any configurations you've changed. 
 
+- Download the .iso file - http://mirrors.seas.harvard.edu/centos/7.8.2003/isos/x86_64/CentOS-7-x86_64-DVD-2003.iso 
+- Launch VMWare Workstation
+- Select "Create a new virtual machine"
 
-The majority of the instructions for setting up the Raspberry Pi server were followed from [the following guide](https://pimylifeup.com/ubuntu-server-raspberry-pi/).
+![image](https://user-images.githubusercontent.com/64757540/97351882-bbb81180-1868-11eb-95db-be3c7f3dc372.png)
 
-- Download Raspberry Pi Ubuntu server
-- Plug SD and ethernet into Raspberry PI and boot up
-- Sign in with default username and password (both are ubuntu), update password
-- Update/Upgrade the system: sudo apt update && sudo apt upgrade
-- Execute following commands to enable ssh:
-```
-sudo apt install openssh-server
-sudo service ssh enable
-sudo service ssh start
-```
-- Install ifconfig : 
+- Select Typical configuration and click next
 
-```
-sudo apt-get install net-tools
-```
+![image](https://user-images.githubusercontent.com/64757540/97351937-cd99b480-1868-11eb-8d50-8e6d39254da1.png)
 
-- Run ifconfig to get your IP address, then you can SSH from Putty or a command line on another PC:
-```
-ssh ubuntu@192.168.1.23
-```
-- Installation Putty: https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe 
-- Launch Putty > Insert IP address > Click Open
+- Select "Installer disc image file" and browse for your downloaded ISO file
 
-![image](https://user-images.githubusercontent.com/64757540/97362700-c8903180-1877-11eb-8287-0953f2fea79f.png)
+![image](https://user-images.githubusercontent.com/64757540/97351997-e3a77500-1868-11eb-8677-888cef9c1b25.png)
 
-- Insert your credentials to sign in.
+- Select your disk size and store the virtual disk as a single file
 
-![image](https://user-images.githubusercontent.com/64757540/97362755-dc3b9800-1877-11eb-80c2-dea857dea3d1.png)
+![image](https://user-images.githubusercontent.com/64757540/97352014-e904bf80-1868-11eb-94f0-1dfa2af60238.png)
 
+- Click finish
 
+![image](https://user-images.githubusercontent.com/64757540/97352034-edc97380-1868-11eb-99eb-c97295696c80.png)
 
+- Launch the virtual machine and choose Install CentOS 7
 
+![image](https://user-images.githubusercontent.com/64757540/97352053-f4f08180-1868-11eb-90b9-1a2df0ba7a26.png)
+
+- Select your preferred language
+
+![image](https://user-images.githubusercontent.com/64757540/97352070-fa4dcc00-1868-11eb-8d71-31d27f35f597.png)
+
+- Select File and Print Server and click Done.
+
+![image](https://user-images.githubusercontent.com/64757540/97352090-0043ad00-1869-11eb-8e98-a0ac0331b924.png)
+
+- Click Installation Destination and apply the following settings.
+
+![image](https://user-images.githubusercontent.com/64757540/97352234-0c2f6f00-1869-11eb-9703-15872b0b45ad.png)
+
+- Select Network & Host Name and toggle Ethernet on
+
+![image](https://user-images.githubusercontent.com/64757540/97352338-12255000-1869-11eb-8b9d-40899acb33d1.png)
+
+- Select User Creation and create a user with desired credentials
+
+![image](https://user-images.githubusercontent.com/64757540/97352437-19e4f480-1869-11eb-881d-2791a30ae861.png)
+
+- Select Root Password and provide the desired credentials
+
+![image](https://user-images.githubusercontent.com/64757540/97352494-1fdad580-1869-11eb-8991-5f33fce619af.png)
+
+- Once finished, reboot and you will be prompted for your user credentials
+
+![image](https://user-images.githubusercontent.com/64757540/97352525-26694d00-1869-11eb-9eba-d0ce07ea8da4.png)
