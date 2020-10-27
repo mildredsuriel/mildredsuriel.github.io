@@ -10,5 +10,3 @@ This setup is broken down into several steps, which if followed in order will al
 6. [Security Part 2](securitypar2)
 7. [Security Hardening and Compliance](securityhardening)
 8. [Containers](containers)
-
-[TEST](test)
