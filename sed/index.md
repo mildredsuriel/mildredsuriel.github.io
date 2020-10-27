@@ -1,10 +1,9 @@
 # SED
 <span style="color:green">
-</span>
-
 	Lets see if this makes a code block
 	And another line
 	Continue...
+</span>
 
 1. Change the name Jon to Jonathan.
 
