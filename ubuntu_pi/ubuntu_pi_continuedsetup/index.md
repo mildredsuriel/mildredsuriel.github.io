@@ -1,1 +1,34 @@
 # CONTINUED SETUP
+
+- Install tmux
+
+![image](https://user-images.githubusercontent.com/64757540/97488687-ef606d80-1934-11eb-9f71-f1a2f25d745f.png)
+
+- Install emacs
+
+![image](https://user-images.githubusercontent.com/64757540/97488737-fd15f300-1934-11eb-811a-f9e29e35603e.png)
+
+- Install fail2ban
+
+![image](https://user-images.githubusercontent.com/64757540/97488777-11f28680-1935-11eb-8ec8-c6df224e4dc7.png)
+
+![image](https://user-images.githubusercontent.com/64757540/97488870-34849f80-1935-11eb-8f07-dca62f4db8b0.png)
+
+- Install cowsay
+
+![image](https://user-images.githubusercontent.com/64757540/97488918-47976f80-1935-11eb-8771-27471f22a1f9.png)
+
+![image](https://user-images.githubusercontent.com/64757540/97489575-1a978c80-1936-11eb-801d-009ef456c80d.png)
+
+- Install lolcat
+
+![image](https://user-images.githubusercontent.com/64757540/97489063-7281c380-1935-11eb-8314-a14fcbab9e70.png)
+
+![image](https://user-images.githubusercontent.com/64757540/97489618-28e5a880-1936-11eb-93d1-8e967bb806cb.png)
+
+- Update your servers if needed
+
+![image](https://user-images.githubusercontent.com/64757540/97489426-ea4fee00-1935-11eb-89bf-b66b59cf387c.png)
+
+
+
