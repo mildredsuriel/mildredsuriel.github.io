@@ -42,15 +42,25 @@ A short document showing you've been able to successfully add all users from bot
 
 - You can always exit your user account to return to the main ubuntu account by running exit. Both accounts have similar permissions, so the rest of this can be run on either account.
 
-- Now that your user account exists, lets get the scripts to create all of the other users
+![image](https://user-images.githubusercontent.com/64757540/97643569-750c1800-1a1e-11eb-9ee7-04bfa362bedf.png)
 
-- You can download the scripts I used with the following commands to whatever directory you choose (I recommend placing it within a scripts directory somewhere, like I have)
+- Now that your user account exists, lets get the scripts to create all of the other users. You can download the scripts I used with the following `wget` commands to whatever directory you choose (I recommend placing it within a scripts directory somewhere, like I have)
 
-- TODO ADD PICTURE OF WGET COMMANDS TO DOWNLOAD THIS FROM GITHUB WHEN I UPLOAD IT
+![image](https://user-images.githubusercontent.com/64757540/97643693-d16f3780-1a1e-11eb-88f5-3e165f778357.png)
 
 - Our create_groups scripts does several things at once
 
-- Run the create_groups script at this time, and the groups will be created with their associated directories and read-only protected policies directories. 
+![image](https://user-images.githubusercontent.com/64757540/97643962-62dea980-1a1f-11eb-91d2-5fedda487833.png)
+
+- Run the create_groups script at this time, and the groups will be created with their associated directories and read-only protected policies directories. Re-run the same commands as before to verify groups, and lets check the permissions of the folders to verify that they're read-only (NOTE: they also have to be executable, otherwise you cannot `cd` into the directory)
+
+
+
+- Our create_users scripts does several things at once
+
+![image](https://user-images.githubusercontent.com/64757540/97643929-4e9aac80-1a1f-11eb-8fb9-cb2f27a1ed1c.png)
+
+- Run the create_user script at this time, and the user will be created with their associated group.
 
 ![image](https://user-images.githubusercontent.com/64757540/97642944-ce734780-1a1c-11eb-8c36-e67d10f2aa4d.png)
 
