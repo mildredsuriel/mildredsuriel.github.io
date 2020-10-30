@@ -54,7 +54,7 @@ A short document showing you've been able to successfully add all users from bot
 
 - Run the create_groups script at this time, and the groups will be created with their associated directories and read-only protected policies directories. Re-run the same commands as before to verify groups, and lets check the permissions of the folders to verify that they're read-only (NOTE: they also have to be executable, otherwise you cannot `cd` into the directory)
 
-
+![image](https://user-images.githubusercontent.com/64757540/97644238-2c555e80-1a20-11eb-918f-79c8aca77d38.png)
 
 - Our create_users scripts does several things at once
 
