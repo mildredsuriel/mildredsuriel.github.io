@@ -90,6 +90,11 @@ A short document showing you've been able to successfully add all users from bot
 
 ![image](https://user-images.githubusercontent.com/64757540/97642831-86542500-1a1c-11eb-9c31-09983f907907.png)
 
+Verify the quota limits of each of our created groups. We can see that temp is the only one with soft and hard quotas set.
+
+![image](https://user-images.githubusercontent.com/64757540/97644921-f1ecc100-1a21-11eb-8065-5e66dc474904.png)
+
+
 
 
 
