@@ -8,6 +8,6 @@ This setup is broken down into several steps, which if followed in order will al
 4. [Networking](networking)
 5. [Firewalls](firewalls)
 6. [Security Part 1](securitypart1)
-7. [Security Part 2](securitypar2)
+7. [Security Part 2](securitypart2)
 8. [Security Hardening and Compliance](securityhardening)
 9. [Containers](containers)
