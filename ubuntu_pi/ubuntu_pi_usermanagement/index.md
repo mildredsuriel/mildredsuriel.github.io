@@ -90,9 +90,17 @@ A short document showing you've been able to successfully add all users from bot
 
 ![image](https://user-images.githubusercontent.com/64757540/97642831-86542500-1a1c-11eb-9c31-09983f907907.png)
 
-Verify the quota limits of each of our created groups. We can see that temp is the only one with soft and hard quotas set.
+- Verify the quota limits of each of our created groups. We can see that temp is the only one with soft and hard quotas set.
 
 ![image](https://user-images.githubusercontent.com/64757540/97644921-f1ecc100-1a21-11eb-8065-5e66dc474904.png)
+
+SOURCES:
+
+https://www.digitalocean.com/community/tutorials/how-to-enable-user-and-group-quotas
+https://www.linux.com/news/implementing-quotas-restrict-disk-space-usage/
+https://www.techrepublic.com/article/how-to-create-users-and-groups-in-linux-from-the-command-line/
+https://www.tecmint.com/create-a-shared-directory-in-linux/
+https://www.digitalocean.com/community/tutorials/how-to-set-filesystem-quotas-on-ubuntu-18-04
 
 
 
