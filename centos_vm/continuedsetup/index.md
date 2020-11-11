@@ -55,3 +55,12 @@
 - Update your servers if needed
 
 ![image](https://user-images.githubusercontent.com/64757540/98839842-0c586e80-2414-11eb-9df5-3c2139be99df.png)
+
+- A list of downloaded repos can be obtained by running the following command
+
+![image](https://user-images.githubusercontent.com/64757540/98840969-7a516580-2415-11eb-864b-9473d42a3f90.png)
+
+- The locations of downloaded programs can be found using the which command
+
+![image](https://user-images.githubusercontent.com/64757540/98841180-bdabd400-2415-11eb-82fd-3642300bc935.png)
+
