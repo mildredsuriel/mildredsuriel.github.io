@@ -30,5 +30,15 @@
 
 ![image](https://user-images.githubusercontent.com/64757540/97489426-ea4fee00-1935-11eb-89bf-b66b59cf387c.png)
 
+- The locations of downloaded programs can be found using the which command
+
+![image](https://user-images.githubusercontent.com/64757540/98842403-8b9b7180-2417-11eb-8c94-f034687ff881.png)
+
+- The dpkg.log file can be looked at to see what packages have been installed and when
+
+![image](https://user-images.githubusercontent.com/64757540/98842648-de752900-2417-11eb-8d1f-c2ba80a7340d.png)
+
+
+
 
 
