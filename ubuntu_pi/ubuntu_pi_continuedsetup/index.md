@@ -38,7 +38,7 @@
 
 ![image](https://user-images.githubusercontent.com/64757540/98842648-de752900-2417-11eb-8d1f-c2ba80a7340d.png)
 
-- Programs can also be configured as a personal package archive (PPA), were you can add/remove the PPA using the following commands.
+- Programs can also be configured as a personal package archive (PPA), where you can add/remove the PPA using the following commands.
 
 ![image](https://user-images.githubusercontent.com/64757540/98843361-dbc70380-2418-11eb-92aa-839185a93816.png)
 
