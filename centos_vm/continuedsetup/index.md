@@ -22,6 +22,10 @@
 
 ![image](https://user-images.githubusercontent.com/64757540/98839403-7b819300-2413-11eb-878d-2f1c03c7d9a8.png)
 
+- Turn on fail2ban
+
+![image](https://user-images.githubusercontent.com/64757540/98840328-a91b0c00-2414-11eb-853f-7bcdef1ec983.png)
+
 - Install cowsay
 
 ![image](https://user-images.githubusercontent.com/64757540/98839432-83413780-2413-11eb-94a2-a57f263b01d5.png)
