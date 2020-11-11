@@ -64,3 +64,8 @@
 
 ![image](https://user-images.githubusercontent.com/64757540/98841180-bdabd400-2415-11eb-82fd-3642300bc935.png)
 
+- The rpm command can be used to get additional information on installed packages. It will also list the date they were installed. Notice how lolcat is not listed since it wasn't installed using yum.
+
+![image](https://user-images.githubusercontent.com/64757540/98841930-cbae2480-2416-11eb-9534-de251d83d235.png)
+
+
