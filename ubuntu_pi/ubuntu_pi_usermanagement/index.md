@@ -102,37 +102,4 @@ https://www.techrepublic.com/article/how-to-create-users-and-groups-in-linux-fro
 https://www.tecmint.com/create-a-shared-directory-in-linux/
 https://www.digitalocean.com/community/tutorials/how-to-set-filesystem-quotas-on-ubuntu-18-04
 
-<<<<<<< HEAD
-```
-msuriel@ubuntu:~/scripts$ sudo wget https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/bash/linuxadmin
-/create_groups.sh
-[sudo] password for msuriel:
---2020-11-12 00:15:57--  https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/bash/linuxadmin/create_groups.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.192.133, 151.101.128.133, 151.101.64.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.192.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 2119 (2.1K) [text/plain]
-Saving to: ‘create_groups.sh’
-
-create_groups.sh            100%[=================================================>]   2.07K  --.-KB/s    in 0.001s
-
-2020-11-12 00:15:57 (2.71 MB/s) - ‘create_groups.sh’ saved [2119/2119]
-
-msuriel@ubuntu:~/scripts$ sudo wget https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/bash/linuxadmin/create_users.sh
---2020-11-12 00:16:02--  https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/bash/linuxadmin/create_users.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.0.133, 151.101.192.133, 151.101.128.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.0.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 2015 (2.0K) [text/plain]
-Saving to: ‘create_users.sh’
-
-create_users.sh             100%[=================================================>]   1.97K  --.-KB/s    in 0.001s
-
-2020-11-12 00:16:02 (2.74 MB/s) - ‘create_users.sh’ saved [2015/2015]
-```
-=======
-
->>>>>>> parent of 6f0a627... Update index.md
-
-
 
