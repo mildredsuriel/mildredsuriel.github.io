@@ -27,7 +27,7 @@ A short document showing you've been able to successfully add all users from bot
 - Lets go ahead and add ourselves as a user to the admin group. We can verify that we are member of the group using getent
 
 <p align="center">
-  <img width="720" height="450" src="https://user-images.githubusercontent.com/64757540/98878198-6119da80-2450-11eb-91de-715132ce90ed.png">
+  <img src="https://user-images.githubusercontent.com/64757540/98878198-6119da80-2450-11eb-91de-715132ce90ed.png">
 </p>
 
 
@@ -41,7 +41,7 @@ sudo wget https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/b
 ```
 
 <p align="center">
-  <img width="720" height="450" src="https://user-images.githubusercontent.com/64757540/98878281-958d9680-2450-11eb-96d4-2884b5b7a30d.png">
+  <img src="https://user-images.githubusercontent.com/64757540/98878281-958d9680-2450-11eb-96d4-2884b5b7a30d.png">
 </p>
 
 test test test
