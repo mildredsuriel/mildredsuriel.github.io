@@ -30,8 +30,10 @@ A short document showing you've been able to successfully add all users from bot
 
 - Lets get the scripts to create all of the other users. You can download the scripts I used with the following `wget` commands to whatever directory you choose (I recommend placing it within a scripts directory somewhere, like I have)
 
-`sudo wget https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/bash/linuxadmin/create_users.sh`
-`sudo wget https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/bash/linuxadmin/create_groups.sh`
+```
+sudo wget https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/bash/linuxadmin/create_users.sh
+sudo wget https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/bash/linuxadmin/create_groups.sh
+```
 
 ![image](https://user-images.githubusercontent.com/64757540/98878281-958d9680-2450-11eb-96d4-2884b5b7a30d.png)
 
