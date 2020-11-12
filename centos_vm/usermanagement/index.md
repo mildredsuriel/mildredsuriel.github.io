@@ -139,7 +139,7 @@ sudo setquota -g temp 9G 10G 0 0 /
 
 
 
-```{attr.output='style="max-height: 100px;"'}
+```
 msuriel@ubuntu:~/scripts$ sudo wget https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/bash/linuxadmin
 /create_groups.sh
 [sudo] password for msuriel:
@@ -165,7 +165,7 @@ Saving to: ‘create_users.sh’
 create_users.sh             100%[=================================================>]   1.97K  --.-KB/s    in 0.001s
 
 2020-11-12 00:16:02 (2.74 MB/s) - ‘create_users.sh’ saved [2015/2015]
-```
+```{style="max-height: 100px;"}
 
 
 
