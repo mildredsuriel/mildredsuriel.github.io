@@ -35,6 +35,12 @@ sudo wget https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/b
 sudo wget https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/bash/linuxadmin/create_groups.sh
 ```
 
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/64757540/98878281-958d9680-2450-11eb-96d4-2884b5b7a30d.png">
+</p>
+
+test test test
+
 ![image](https://user-images.githubusercontent.com/64757540/98878281-958d9680-2450-11eb-96d4-2884b5b7a30d.png)
 
 - Our create_groups scripts does several things at once
