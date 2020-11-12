@@ -30,6 +30,9 @@ A short document showing you've been able to successfully add all users from bot
 
 - Lets get the scripts to create all of the other users. You can download the scripts I used with the following `wget` commands to whatever directory you choose (I recommend placing it within a scripts directory somewhere, like I have)
 
+`sudo wget https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/bash/linuxadmin/create_users.sh`
+`sudo wget https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/bash/linuxadmin/create_groups.sh`
+
 ![image](https://user-images.githubusercontent.com/64757540/98878281-958d9680-2450-11eb-96d4-2884b5b7a30d.png)
 
 - Our create_groups scripts does several things at once
@@ -136,36 +139,6 @@ sudo setquota -g temp 9G 10G 0 0 /
 
 - Verify the quota limits of each of our created groups. We can see that temp is the only one with soft and hard quotas set.
 
-
-
-
-```
-msuriel@ubuntu:~/scripts$ sudo wget https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/bash/linuxadmin
-/create_groups.sh
-[sudo] password for msuriel:
---2020-11-12 00:15:57--  https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/bash/linuxadmin/create_groups.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.192.133, 151.101.128.133, 151.101.64.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.192.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 2119 (2.1K) [text/plain]
-Saving to: ‘create_groups.sh’
-
-create_groups.sh            100%[=================================================>]   2.07K  --.-KB/s    in 0.001s
-
-2020-11-12 00:15:57 (2.71 MB/s) - ‘create_groups.sh’ saved [2119/2119]
-
-msuriel@ubuntu:~/scripts$ sudo wget https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/bash/linuxadmin/create_users.sh
---2020-11-12 00:16:02--  https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/bash/linuxadmin/create_users.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.0.133, 151.101.192.133, 151.101.128.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.0.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 2015 (2.0K) [text/plain]
-Saving to: ‘create_users.sh’
-
-create_users.sh             100%[=================================================>]   1.97K  --.-KB/s    in 0.001s
-
-2020-11-12 00:16:02 (2.74 MB/s) - ‘create_users.sh’ saved [2015/2015]
-```{style="max-height: 100px;"}
 
 
 
