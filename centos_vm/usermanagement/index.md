@@ -139,7 +139,7 @@ sudo setquota -g temp 9G 10G 0 0 /
 
 
 
-```{max.height='30px'}
+```{attr.output='style="max-height: 100px;"'}
 msuriel@ubuntu:~/scripts$ sudo wget https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/bash/linuxadmin
 /create_groups.sh
 [sudo] password for msuriel:
