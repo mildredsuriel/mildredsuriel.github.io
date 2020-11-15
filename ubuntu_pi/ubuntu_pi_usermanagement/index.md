@@ -126,7 +126,7 @@ sudo setquota -g temp 9G 10G 0 0 /
 
 ![image](https://user-images.githubusercontent.com/64757540/97644238-2c555e80-1a20-11eb-918f-79c8aca77d38.png)
 
-- Our create_users scripts does several things at once. Namely, it assigns each user within the username files to one of the 4 groups. Obviously in an ideal situation, the role would be specified for the user instead of randomly assigning. Also, to create the username, each user's full name has been appended without spaces or hyphens, and then the maximum length is set to 20 characters to adhere to Linux username length limits.
+- Our create_users scripts does several things at once. Namely, it assigns each user within the username files to one of the 4 groups. Obviously in an ideal situation, the role would be specified for the user instead of randomly assigning. For this case though, we just take the first user in the list, add them to the temp group, then take the next users and add them to the staff, developers, and admin groups before adding a user to the temp group again. Also, to create the username, each user's full name has been appended without spaces or hyphens, and then the maximum length is set to 20 characters to adhere to Linux username length limits.
 
 ```bash
 # List of possible groups to add users to
