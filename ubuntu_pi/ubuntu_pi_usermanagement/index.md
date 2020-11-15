@@ -50,7 +50,77 @@ A short document showing you've been able to successfully add all users from bot
 
 - Our create_groups scripts does several things at once
 
-![image](https://user-images.githubusercontent.com/64757540/97643962-62dea980-1a1f-11eb-91d2-5fedda487833.png)
+```bash
+# Create top level policies
+sudo mkdir -p /home/shared/policies
+# Make file read only
+sudo chmod a=rx /home/shared/policies
+
+# List of possible groups to add users to
+groups=("temp" "staff" "developers" "admin")
+# Loop over each group and create files with set permissions
+for group in $groups; do
+	# Create a group
+	sudo groupadd $group
+	# Create the group directory
+	sudo mkdir -p /home/shared/groups/$group
+	# Assign the group directory to the group
+	sudo chgrp -R $group /home/shared/groups/$group
+	# Only users who are a part of this group can write / execute
+	sudo chmod -R 2775 /home/shared/groups/$group
+	# Make policy folder for each group
+	sudo mkdir -p /home/shared/groups/$group/policies
+	# Make each policy folder read only
+	sudo chmod a=rx /home/shared/groups/$group/policies
+done
+
+# Get the OS name to determine what program to install
+os=$(hostnamectl | awk -F ' ' '/Operating System:/ {print $3}')
+
+if [ $os == "Ubuntu" ]
+then
+	# Get quota support
+	sudo apt-get install quota
+	# Install quota_v1.ko and quota_v2.ko dependencies
+	sudo apt-get install linux-image-extra-virtual	
+fi
+
+if [ $os == "CentOS" ]
+then
+	# Get quota support
+	sudo yum install quota
+fi
+
+# Find the line within /etc/fstab that contains the "/" mount, and print the line number
+line_num=$(awk -F ' ' '$2 == "\/" {print NR}' /etc/fstab)
+# Get the mount name 
+mount=$(awk -F ' ' '$2 == "\/" {print $1}' /etc/fstab)
+# Get the format type
+format=$(awk -F ' ' '$2 == "\/" {print $3}' /etc/fstab)
+
+# Update "/" fstab mount to support user and group quotas
+sudo sed -i "$line_num s/defaults/defaults,usrquota,grpquota/" /etc/fstab
+# Remount disk with new quota rules
+sudo mount -o remount /
+
+# XFS partitions take special effort to support quotas
+if [ $format == "xfs" ]
+then
+	# Install grub2 on the partition
+	sudo grub2-install $mount --skip-fs-probe
+	# Configure grub
+	sudo grub2-mkconfig -o /boot/efi/EFI/${os,,}/grub.cfg
+else
+	# Run quotacheck to create aquota.group and aquota.user files
+	sudo quotacheck -ugm /
+fi
+
+# Turn quota on
+sudo quotaon -v /
+# Set the quota limit to 10G for temp group
+sudo setquota -g temp 9G 10G 0 0 /
+
+```
 
 - Run the create_groups script at this time, and the groups will be created with their associated directories and read-only protected policies directories. Re-run the same commands as before to verify groups, and lets check the permissions of the folders to verify that they're read-only (NOTE: they also have to be executable, otherwise you cannot `cd` into the directory)
 
@@ -58,7 +128,64 @@ A short document showing you've been able to successfully add all users from bot
 
 - Our create_users scripts does several things at once
 
-![image](https://user-images.githubusercontent.com/64757540/97643929-4e9aac80-1a1f-11eb-8fb9-cb2f27a1ed1c.png)
+```bash
+# List of possible groups to add users to
+groups=("temp" "staff" "developers" "admin")
+
+# Keep track of which group we're adding a user to
+i=0
+
+# Get the OS name to determine what program to install
+os=$(hostnamectl | awk -F ' ' '/Operating System:/ {print $3}')
+
+# Default name of sudo group is usually sudo
+sudo_group="sudo"
+
+if [ $os == "CentOS" ]
+then
+	# The default sudo group in CentOS is called wheel
+	sudo_group="wheel"
+fi
+
+# Take in the first argument as the file to open and loop through each line of the file
+while IFS= read -r line; do
+        # Assign the user a group
+        group=${groups[$i]}
+		# Remove spaces from name
+        username=${line//[[:blank:]]/}
+		# Remove hyphens from name
+        username=${username//-/}
+		# Make username first 20 characters of name
+        username=${username:0:20}
+
+        echo "Creating a user and assign them a group : sudo useradd -m -c \"$line\" -s/bin/bash -G $group $username"
+        sudo useradd -m -c "$line" -s/bin/bash -G $group $username -p Linux2020
+
+        # Require the username to update the default password when signing in
+        sudo passwd -e $username
+
+        echo "Creating a user file in their group : sudo mkdir groups/$group/$username"
+        sudo mkdir /home/shared/groups/$group/$username
+
+        # Grant users of admin group sudo permissions
+        if [ $group == "admin" ]
+        then
+                echo "Granting sudo priveleges to $username  : sudo usermod -a -G $sudo_group $username"
+                sudo usermod -a -G $sudo_group $username
+        fi
+
+        # Set developer shells to C shell
+        if [ $group == "developers" ]
+        then
+                echo "Setting C shell as default for developer $username : sudo chsh --shell /bin/sh $username"
+                sudo chsh --shell /bin/sh $username
+        fi
+
+        # Increment value so that next user is in a different group (even distribution across each group, % 4 handles going back to the first value
+        let "i++"
+        i=$((i%4))
+done < "$1"
+```
 
 - Run the create_user script at this time, and the user will be created with their associated group.
 
