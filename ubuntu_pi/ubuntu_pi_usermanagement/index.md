@@ -46,7 +46,7 @@ A short document showing you've been able to successfully add all users from bot
 
 - Now that your user account exists, lets get the scripts to create all of the other users. You can download the scripts I used with the following `wget` commands to whatever directory you choose (I recommend placing it within a scripts directory somewhere, like I have)
 
-![image](https://user-images.githubusercontent.com/64757540/97643693-d16f3780-1a1e-11eb-88f5-3e165f778357.png)
+![image](https://user-images.githubusercontent.com/64757540/99195790-f5888380-2755-11eb-9c3a-4b8a5692c9a1.png)
 
 - Our create_groups scripts does several things at once
 
