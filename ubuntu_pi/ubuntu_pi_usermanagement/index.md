@@ -48,7 +48,7 @@ A short document showing you've been able to successfully add all users from bot
 
 ![image](https://user-images.githubusercontent.com/64757540/99195790-f5888380-2755-11eb-9c3a-4b8a5692c9a1.png)
 
-- Our create_groups scripts does several things at once
+- Our create_groups scripts does several things at once. Each group is created and a shared group folder is created for each group. We update the permissions of these groups folders. To get quotas to work, we need to configure our system to allow quotas, which varies per OS.
 
 ```bash
 # Create top level policies
