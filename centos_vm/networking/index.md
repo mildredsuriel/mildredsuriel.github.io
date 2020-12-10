@@ -46,3 +46,4 @@ A well commented and well tested script, and a sample run of your script on each
 
 ![image](https://user-images.githubusercontent.com/17841536/101684882-141c2a80-3a35-11eb-84b4-ddb823edfbb0.png)
 
+- The bash script can be run from any directory it is downloaded to, and it will dump the log the same directory that the script is run from. So if you are trying to use this script for admin purposes, you should download it to a specific folder that you want the logs to be saved in. 
