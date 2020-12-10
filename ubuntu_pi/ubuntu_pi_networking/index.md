@@ -29,3 +29,14 @@ A well commented and well tested script, and a sample run of your script on each
 - `ss` is a netstat program replacement that can be used to get information about ports on your network.
 
 ![image](https://user-images.githubusercontent.com/64757540/97744881-5bbaa880-1abe-11eb-8ff2-4fef7ea7a6d8.png)
+
+- All of the above commands can be executed by downloading the network script.
+
+![image](https://user-images.githubusercontent.com/17841536/101655319-795d2500-3a0f-11eb-96b6-5d61d2f77b73.png)
+
+-
+
+- After running the script, we can see that the output is split up between several files for easier parsing 
+
+![image](https://user-images.githubusercontent.com/17841536/101655377-8da12200-3a0f-11eb-8b1f-7042949bc2ad.png)
+ 

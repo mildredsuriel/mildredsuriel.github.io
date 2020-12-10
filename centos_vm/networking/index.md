@@ -34,3 +34,15 @@ A well commented and well tested script, and a sample run of your script on each
 
 ![image](https://user-images.githubusercontent.com/64757540/100123876-f5b90b00-2e48-11eb-98c4-cfb078c992d5.png)
 
+- All of the above commands can be executed by downloading the network script.
+
+![image](https://user-images.githubusercontent.com/17841536/101684644-c0a9dc80-3a34-11eb-88e9-67a0957e2200.png)
+
+![image](https://user-images.githubusercontent.com/17841536/101684833-0070c400-3a35-11eb-9c28-024cfb59bad1.png)
+
+![image](https://user-images.githubusercontent.com/17841536/101684860-0b2b5900-3a35-11eb-99e1-f7450b4eea9e.png)
+
+- After running the script, we can see that the output is split up between several files for easier parsing 
+
+![image](https://user-images.githubusercontent.com/17841536/101684882-141c2a80-3a35-11eb-84b4-ddb823edfbb0.png)
+
