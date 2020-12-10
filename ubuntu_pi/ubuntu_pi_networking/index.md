@@ -30,11 +30,13 @@ A well commented and well tested script, and a sample run of your script on each
 
 ![image](https://user-images.githubusercontent.com/64757540/97744881-5bbaa880-1abe-11eb-8ff2-4fef7ea7a6d8.png)
 
-- All of the above commands can be executed by downloading the network script.
+- All of the above commands can be executed by downloading and running the network script.
 
 ![image](https://user-images.githubusercontent.com/17841536/101655319-795d2500-3a0f-11eb-96b6-5d61d2f77b73.png)
 
--
+![image](https://user-images.githubusercontent.com/64757540/101836334-341e1d80-3b0b-11eb-9596-8249cf08e20c.png)
+
+![image](https://user-images.githubusercontent.com/64757540/101836450-6a5b9d00-3b0b-11eb-9780-3c8535071fa4.png)
 
 - After running the script, we can see that the output is split up between several files for easier parsing 
 
