@@ -14,7 +14,9 @@ A well commented and well tested script, and a sample run of your script on each
 
 ![image](https://user-images.githubusercontent.com/64757540/97744669-08485a80-1abe-11eb-9511-b490c77c8494.png)
 
-- Running `speedtest-cli` will begin a test to a close server to determine your latency and bandwidth
+- Installing and running `speedtest-cli` will begin a test to a close server to determine your latency and bandwidth
+
+![image](https://user-images.githubusercontent.com/64757540/101836752-f8d01e80-3b0b-11eb-9620-7768818af4ad.png)
 
 ![image](https://user-images.githubusercontent.com/64757540/97744724-1dbd8480-1abe-11eb-802c-f7fbd5d1b01f.png)
 
@@ -34,11 +36,10 @@ A well commented and well tested script, and a sample run of your script on each
 
 ![image](https://user-images.githubusercontent.com/17841536/101655319-795d2500-3a0f-11eb-96b6-5d61d2f77b73.png)
 
-![image](https://user-images.githubusercontent.com/64757540/101836334-341e1d80-3b0b-11eb-9596-8249cf08e20c.png)
-
 ![image](https://user-images.githubusercontent.com/64757540/101836450-6a5b9d00-3b0b-11eb-9780-3c8535071fa4.png)
 
-- After running the script, we can see that the output is split up between several files for easier parsing 
+- After running the script, we can see that the output is split up between several files for easier parsing.
 
 ![image](https://user-images.githubusercontent.com/17841536/101655377-8da12200-3a0f-11eb-8b1f-7042949bc2ad.png)
- 
+
+- The bash script can be run from any directory it is downloaded to, and it will dump the log the same directory that the script is run from. So if you are trying to use this script for admin purposes, you should download it to a specific folder that you want the logs to be saved in. 
