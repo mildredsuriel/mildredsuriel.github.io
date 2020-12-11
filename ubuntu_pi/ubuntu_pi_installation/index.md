@@ -10,7 +10,7 @@ Deliverables:
 1. A short document showing how you did installs.  Target market is someone trying to follow along with you to make their own machines, assume some technical knowledge but not expertise.  Screenshots are helpful to go with your descriptions.
 2. A short document saying what you have included in your installs, including any software you've added and any configurations you've changed. =
 
-- Plus the SD card into your PC and download Raspberry Pi Ubuntu Server. Here is an article that will explain the process, as well as provide links to the downloads : 
+- Plug the SD card into your PC and download Raspberry Pi Ubuntu Server. Here is an article that will explain the process, as well as provide links to the downloads : 
 
 - https://pimylifeup.com/ubuntu-server-raspberry-pi/ 
 
