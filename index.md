@@ -6,4 +6,8 @@ This portfolio is meant to display my background in information technology and c
 
 Aside from basic Linux scripting and OS configurations, I am also experienced in Processing (which is a language similar to C), where I have re-designed the popular [2048](2048) game. I also have experience with Python, where I have made an [automated texting app using Twilio](twilio), and developed [regex expressions for number and email verification](https://github.com/mildredsuriel/mildredsuriel/tree/master/python/regex).
 
+I am also certified in Splunk Fundamentals, part 1 and 2!
+
+![image](https://user-images.githubusercontent.com/64757540/101993580-bd5b5e80-3c89-11eb-81a8-558514e27740.png) ![image](https://user-images.githubusercontent.com/64757540/101993565-a157bd00-3c89-11eb-9994-2d84e17795e5.png)
+
 Please check back frequently for any updates to my [weekly accomplishments](weekly_accomplishments), or checkout my [LinkedIn](https://www.linkedin.com/in/mildred-suriel-957b7688/) or [Github source](https://www.github.com/mildredsuriel) for more updates. Thanks!
