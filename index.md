@@ -8,7 +8,7 @@ Aside from basic Linux scripting and OS configurations, I am also experienced in
 
 I am also certified in Splunk Fundamentals, part 1 and 2!
 
-Part 1 | Part 2
+    |
 --- | ---
 ![](https://user-images.githubusercontent.com/64757540/101993580-bd5b5e80-3c89-11eb-81a8-558514e27740.png) | ![](https://user-images.githubusercontent.com/64757540/101993565-a157bd00-3c89-11eb-9994-2d84e17795e5.png)
 
