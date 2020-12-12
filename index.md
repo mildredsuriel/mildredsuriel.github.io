@@ -8,6 +8,6 @@ Aside from basic Linux scripting and OS configurations, I am also experienced in
 
 I am also certified in Splunk Fundamentals, part 1 and 2!
 
-![image](https://user-images.githubusercontent.com/64757540/101993580-bd5b5e80-3c89-11eb-81a8-558514e27740.png) ![image](https://user-images.githubusercontent.com/64757540/101993565-a157bd00-3c89-11eb-9994-2d84e17795e5.png)
+![alt-text-1](https://user-images.githubusercontent.com/64757540/101993580-bd5b5e80-3c89-11eb-81a8-558514e27740.png) ![alt-text-2](https://user-images.githubusercontent.com/64757540/101993565-a157bd00-3c89-11eb-9994-2d84e17795e5.png)
 
 Please check back frequently for any updates to my [weekly accomplishments](weekly_accomplishments), or checkout my [LinkedIn](https://www.linkedin.com/in/mildred-suriel-957b7688/) or [Github source](https://www.github.com/mildredsuriel) for more updates. Thanks!
