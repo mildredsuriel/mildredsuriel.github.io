@@ -1,5 +1,7 @@
 # SECURITY HARDENING
 
+1. Download and install Lynis (https://cisofy.com/lynis/) on your servers and run it. 
+
 ![image](https://user-images.githubusercontent.com/64757540/102286947-577c0a80-3f07-11eb-94eb-99f096da6177.png)
 
 ![image](https://user-images.githubusercontent.com/64757540/102286955-5c40be80-3f07-11eb-95c7-93c2696a8340.png)

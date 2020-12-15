@@ -1,5 +1,7 @@
 # SECURITY HARDENING
 
+1. Download and install Lynis (https://cisofy.com/lynis/) on your servers and run it. 
+
 ```bash
 msuriel@ubuntu:~/security$ git clone https://github.com/CISOfy/lynis
 Cloning into 'lynis'...
