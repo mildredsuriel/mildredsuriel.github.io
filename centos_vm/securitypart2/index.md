@@ -6,6 +6,59 @@
 
 3. Find out how to boot into emergency mode for both your servers.  Write a one page (or less) document on how to do that. Include 1 paragraph executive summary on why you might want to. 
 
+# CRON
+
+- A list of all users can be generated using the compgen command (we pipe the head command to just print the first 10 users here, as the list is much longer)
+
+![image](https://user-images.githubusercontent.com/64757540/102267324-bb8ed680-3ee7-11eb-817b-4fdfa1ea14ef.png)
+
+- By having a list of the users, we can write a script to check the list every hour and identify any changes to the users. 
+
+```
+# Get a list of all of the users for the new hourly snapshot
+compgen -u > users_new_hourly
+
+# Compare the new hourly snapshot to the previous hour snapshot
+diff users_last_hourly users_new_hourly > user_changes
+
+# Check if the file is empty. If the string returned from the find command is empty, it means that the file being looked at isn't empty, signifying their are user changes
+if [ -z "$(find -empty -name user_changes)" ]
+then
+    echo "User changes detected!"
+    file=$(date +"%m_%d_%Y_H%H_user_changes")
+    # Print all but the first and last lines since they don't contain the username changes, and save it to an hourly snapshot file
+    sed '1d;$d' user_changes | tee $file
+# Otherwise if the string returned is empty, then there are no differences
+else
+    echo "No user changes detected."
+fi
+
+cp users_new_hourly users_last_hourly
+``` 
+
+- Navigate to the directory that you want to install the script in. The following command can be used to download the script:
+
+`wget https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/bash/linuxadmin/user_cron.sh`
+
+![image](https://user-images.githubusercontent.com/64757540/102267649-3c4dd280-3ee8-11eb-8414-0f220478ba51.png)
+
+- To verify the script works, we can generate the last hourly manually, and run the script to see what it does:
+
+![image](https://user-images.githubusercontent.com/64757540/102267774-60111880-3ee8-11eb-9830-cd5ac8916a26.png)
+
+- As expected, no user changes were detected. We can add/delete a user and run it to see that the appropriate log file is generated with the different user.
+
+![image](https://user-images.githubusercontent.com/64757540/102267953-9e0e3c80-3ee8-11eb-8281-e152db5b41d4.png)
+
+- To ensure that the script is run every hour, we can add the script to cron by running `sudo crontab -e`, which will launch an editor. At the bottom of the file, we can add `@hourly /path/to/script.sh` to have the cron job added.
+
+![image](https://user-images.githubusercontent.com/64757540/102268346-34426280-3ee9-11eb-9cdc-35d1e5864409.png)
+
+- Another easier alternative is to move the script to the cron.hourly directory. If placed within this directory, we do not need to reference the path to the file, as it was live in this directory instead.
+
+![image](https://user-images.githubusercontent.com/64757540/102268047-c1d18280-3ee8-11eb-8eba-86f75dd21d49.png)
+
+
 # DAEMONS
  
 - To determine what daemons are available on your system and the status of each, the following command can be used to print out a list: `systemctl list-unit-files --type service`

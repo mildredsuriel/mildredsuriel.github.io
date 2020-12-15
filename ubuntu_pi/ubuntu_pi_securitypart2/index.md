@@ -8,6 +8,52 @@
 
 # CRON
 
+- A list of all users can be generated using the compgen command
+
+![image](https://user-images.githubusercontent.com/64757540/102265989-de1ff000-3ee5-11eb-9d19-29306c9f98bd.png)
+
+- By having a list of the users, we can write a script to check the list every hour and identify any changes to the users. 
+
+```
+# Get a list of all of the users for the new hourly snapshot
+compgen -u > users_new_hourly
+
+# Compare the new hourly snapshot to the previous hour snapshot
+diff users_last_hourly users_new_hourly > user_changes
+
+# Check if the file is empty. If the string returned from the find command is empty, it means that the file being looked at isn't empty, signifying their are user changes
+if [ -z "$(find -empty -name user_changes)" ]
+then
+    echo "User changes detected!"
+    file=$(date +"%m_%d_%Y_H%H_user_changes")
+    # Print all but the first and last lines since they don't contain the username changes, and save it to an hourly snapshot file
+    sed '1d;$d' user_changes | tee $file
+# Otherwise if the string returned is empty, then there are no differences
+else
+    echo "No user changes detected."
+fi
+
+cp users_new_hourly users_last_hourly
+``` 
+
+- Navigate to the directory that you want to install the script in. The following command can be used to download the script:
+
+`wget https://raw.githubusercontent.com/mildredsuriel/mildredsuriel/master/bash/linuxadmin/user_cron.sh`
+
+![image](https://user-images.githubusercontent.com/64757540/102266262-32c36b00-3ee6-11eb-92fe-761e6c993213.png)
+
+- To verify the script works, we can generate the last hourly manually, and run the script to see what it does:
+
+![image](https://user-images.githubusercontent.com/64757540/102266756-df9de800-3ee6-11eb-99d8-ffa42de38eb8.png)
+
+- As expected, no user changes were detected. We can add/delete a user and run it to see that the appropriate log file is generated with the different user.
+
+![image](https://user-images.githubusercontent.com/64757540/102267027-4d4a1400-3ee7-11eb-8d03-c9c05112ee21.png)
+
+- To ensure that the script is run every hour, we must move the script to the cron.hourly directory.
+
+![image](https://user-images.githubusercontent.com/64757540/102267183-82eefd00-3ee7-11eb-9bfd-6c6d5d5c3dc9.png)
+
 # DAEMONS
  
 - To determine what daemons are available on your system and the status of each, the following command can be used to print out a list: `systemctl list-unit-files --type service`
