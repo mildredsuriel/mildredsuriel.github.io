@@ -6,6 +6,8 @@
 
 3. Find out how to boot into emergency mode for both your servers.  Write a one page (or less) document on how to do that. Include 1 paragraph executive summary on why you might want to. 
 
+# CRON
+
 # DAEMONS
  
 - To determine what daemons are available on your system and the status of each, the following command can be used to print out a list: `systemctl list-unit-files --type service`
@@ -30,27 +32,34 @@
 
 ![image](https://user-images.githubusercontent.com/64757540/102260987-0e17c500-3edf-11eb-8653-75fdf3cfd351.png)
 
-- As an example, the mdmonitor process is listed as enabled within the list of all services, although when checking the status it is not listed. If we check the status of the process, we can see that the process is inactive for some reason, which is something that can be looked into separately if needed.
+- Enabling a daemon at boot is as simple as issuing the enable commands to for the process. When enabling a daemon, it will ask which user credentials you would like to use, so we will select our profile and provide our password.
 
-- Enabling aa daemon at boot is as simple as issuing the enable commands to for the process. When enabling a daemon, it will ask which user credentials you would like to use, so we will select our profile and provide our password.
-
+![image](https://user-images.githubusercontent.com/64757540/102264191-49b48e00-3ee3-11eb-8a23-be1c889fca5b.png)
 
 - After enabling the service we can grep to see that it appears as enabled now
 
+![image](https://user-images.githubusercontent.com/64757540/102264112-2f7ab000-3ee3-11eb-974d-036aa44236e3.png)
 
 - The same process can be done for disabling a daemon and verifying that it was disabled.
+
+![image](https://user-images.githubusercontent.com/64757540/102264281-68b32000-3ee3-11eb-8a20-3f9001eca794.png)
+
+![image](https://user-images.githubusercontent.com/64757540/102264358-85e7ee80-3ee3-11eb-846a-650673493b7c.png)
 
 # EMERGENCY MODE
 
 - Emergency mode is a mode that provides the most minimal environment possible to still boot, which should allow for the system to boot when it is unable to in other modes, allowing you to repair the issues that are stopping you from booting. Emergency mode will the root file system will be mounted as read-only and no other local file systems are mounted and the network interface is not active. Typically, emergency mode should only be accessed if rescue mode is not accessible. Rescue mode is similar to Emergency mode, excep that Rescue mode also tries to mount local file systems, so if there is an issue within the local file systems, rescue mode may not be accessible, while emergency mode is.
 
-- When booting CentOS, we will be presented with the GRUB menu to select the operating system. If we click 'e' to edit, we will open up a boot script that we will need to modify.
+- When booting Ubuntu, we need to hold shift while booting, which we will be presented with the GRUB menu to select the operating system. If we click 'e' to edit, we will open up a boot script that we will need to modify.
 
-- To enter recovery mode, we must modify the line that begins with 'linux'
+![image](https://user-images.githubusercontent.com/64757540/102264489-b760ba00-3ee3-11eb-8a81-94bc082d0bb4.png)
 
-- I have added systemd.unit=\emergency.target to the line. Once added, we may press Ctrl-x to start with the applied settings
+- To enter recovery mode, we must modify the line that begins with 'linux'. I have added systemd.unit=emergency.target to the line. Once added, we may press Ctrl-x to start with the applied settings
+ 
+![image](https://user-images.githubusercontent.com/64757540/102264673-f68f0b00-3ee3-11eb-8d24-e7a585f73ed9.png)
 
-- Upon boot, we should see that we are placed in emergency mode
+- Upon boot, we should see that we are placed in emergency mode. By issuing the Ctrl-D option, we will continue into emergency mode and be prompted to login.
 
-- We are able to log in using our same credentials, but within a much more minimal environment
+![image](https://user-images.githubusercontent.com/64757540/102264737-09a1db00-3ee4-11eb-8ee0-85e587f10b33.png)
+
 
