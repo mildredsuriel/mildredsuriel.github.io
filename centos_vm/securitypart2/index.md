@@ -54,6 +54,8 @@
 
 # EMERGENCY MODE
 
+- Emergency mode is a mode that provides the most minimal environment possible to still boot, which should allow for the system to boot when it is unable to in other modes, allowing you to repair the issues that are stopping you from booting. Emergency mode will the root file system will be mounted as read-only and no other local file systems are mounted and the network interface is not active. Typically, emergency mode should only be accessed if rescue mode is not accessible. Rescue mode is similar to Emergency mode, excep that Rescue mode also tries to mount local file systems, so if there is an issue within the local file systems, rescue mode may not be accessible, while emergency mode is.
+
 - When booting CentOS, we will be presented with the GRUB menu to select the operating system. If we click 'e' to edit, we will open up a boot script that we will need to modify.
 
 ![image](https://user-images.githubusercontent.com/64757540/102248564-48796600-3ecf-11eb-89c7-81f6a2670f17.png)
