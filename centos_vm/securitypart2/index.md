@@ -50,11 +50,7 @@ cp users_new_hourly users_last_hourly
 
 ![image](https://user-images.githubusercontent.com/64757540/102267953-9e0e3c80-3ee8-11eb-8281-e152db5b41d4.png)
 
-- To ensure that the script is run every hour, we can add the script to cron by running `sudo crontab -e`, which will launch an editor. At the bottom of the file, we can add `@hourly /path/to/script.sh` to have the cron job added.
-
-![image](https://user-images.githubusercontent.com/64757540/102268346-34426280-3ee9-11eb-9cdc-35d1e5864409.png)
-
-- Another easier alternative is to move the script to the cron.hourly directory. If placed within this directory, we do not need to reference the path to the file, as it was live in this directory instead.
+- To ensure that the script is run every hour, we must move the script to the cron.hourly directory.
 
 ![image](https://user-images.githubusercontent.com/64757540/102268047-c1d18280-3ee8-11eb-8eba-86f75dd21d49.png)
 
