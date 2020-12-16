@@ -44,39 +44,39 @@ Challenge - I have done all assignments up to date for Ubuntu, and I will have t
 
 - Week ending 11/8
 
-Accomplishment -
+Accomplishment - I have finished Splunk Fundamentals Part 1, allowing me to skip the Firewall assignment which was due this week. By doing that, I am currently all caught up on assignments.
 
-Challenge -
+Challenge - The Security Part 1 assignment also looks like it will be difficult, so I need to start looking into the details there. Luckily, there are 2 weeks until this assignment is due.
 
 - Week ending 11/15
 
-Accomplishment -
+Accomplishment - I have completed the first portion of Security Part 2 and wrote a bash script to check for changed users, and have begun to look into how to create a cron job from the bash script.
 
-Challenge -
+Challenge - I am still having difficulties with Security Part 1. Instead, I think I am going to start working on Splunk Fundamentals Part 2 as a bonus assignment.
 
 - Week ending 11/22
 
-Accomplishment -
+Accomplishment - I have completed about half of Splunk Fundamentals Part 2, and I have installed and run Lynis on both of my servers for Security Hardening.
 
-Challenge -
+Challenge - Since I do not have Security Part 1 done, I am technically now behind the due dates, so I will need to get the Splunk assignment completed so that I can be caught up.
 
 - Week ending 11/29
 
-Accomplishment -
+Accomplishment - I received my grade back for the midterm at the beginning of the week, and I received a 100 which I am really happy about. I also spent holidy time with my family.
 
-Challenge -
+Challenge - I had a difficult time getting much work done this week due to the holidays and travelling, and so I likely won't have time to complete the containers assignment.
 
-- Week ending 12/6
+- Week ending 12/6 
 
-Accomplishment -
+Accomplishment - I have finished Splunk Fundamentals Part 2, allowing me to replace the Security Part 1 assignment. I have also finished the Cron job for Security Part 2.
 
-Challenge -
+Challenge - I still need to finish the daemon and emergency mode portions to Security Part 2, and describe how I will harden my security as a result of the Lynis results. I definitely will not have time to do the container assignment.
 
 - Week ending 12/13
 
-Accomplishment -
+Accomplishment - I have finished the daemon and emergency mode portions to Security Part 2.
 
-Challenge -
+Challenge - With so little time, I don't think it is worth looking into the last container assignment. All I have left is to record my final presentation before Tuesday night, as well as the post mortem due at the end of the week.
 
 
 
